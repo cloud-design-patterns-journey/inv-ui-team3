@@ -115,11 +115,11 @@ class UIShell extends React.Component {
                     />
                 </Theme>
                 <Content className='content'>
-                    <Routes>
-                        <Route path="/" element={<LandingPage />} />
-                        <Route path="/inventory/items" element={<StockItemList />} />
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/inventory/items" element={<StockItemList stockService={this.props.stockService} />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
                 </Content>
             </BrowserRouter>
         );
