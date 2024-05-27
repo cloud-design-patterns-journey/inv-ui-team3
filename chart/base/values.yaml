@@ -41,3 +41,11 @@ vcsInfo:
   branch: ""
 
 runtime: js
+
+ressources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
