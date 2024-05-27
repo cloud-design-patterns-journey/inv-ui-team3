@@ -36,6 +36,13 @@ To run unit tests:
 yarn test
 ```
 
+To run load test with k6:
+
+```sh
+# Ramp Virtual Users from 0 to 100 over 10s, stay there for 60s, then 10s down to 0
+k6 run script.js -u 0 -s 10s:100 -s 60s:100 -s 10s:0
+```
+
 ##### Run production build
 
 To try a production build, run:
